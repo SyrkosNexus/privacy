@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — SingleWindow Agent CDP Bridge | SyrkosNexus</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --code-bg: #f1f5f9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1120;
+        --card: #111827;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --border: #1e293b;
+        --accent: #60a5fa;
+        --code-bg: #1e293b;
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 40px 44px;
+      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+    }
+    .brand {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-size: 28px;
+      line-height: 1.3;
+    }
+    .meta {
+      padding: 14px 18px;
+      background: var(--code-bg);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .meta div + div {
+      margin-top: 4px;
+    }
+    h2 {
+      margin: 28px 0 12px;
+      font-size: 19px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    p {
+      margin: 10px 0;
+    }
+    ul {
+      margin: 10px 0;
+      padding-left: 22px;
+    }
+    li {
+      margin: 8px 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .en {
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 26px 22px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="brand">SyrkosNexus</div>
+    <h1>隐私权政策 / Privacy Policy</h1>
+
+    <div class="meta">
+      <div><strong>扩展名称 / Extension Name</strong>：单一窗口智能填报助手扩展插件（SingleWindow Agent CDP Bridge）</div>
+      <div><strong>最后更新 / Last Updated</strong>：2026-11-20</div>
+    </div>
+
+    <section>
+      <h2>1. 数据收集与传输声明 / Data Collection &amp; Transmission</h2>
+      <p>本扩展程序<strong>不会</strong>收集、存储、出售或向任何第三方服务器传输您的个人身份信息、浏览历史、账号密码或网页内容。</p>
+      <p class="en">All operations of this extension run <strong>strictly locally</strong> on the user's device. This extension <strong>does NOT</strong> collect, store, sell, or transmit your personal information, browsing history, credentials, or webpage contents to any external or third-party servers.</p>
+    </section>
+
+    <section>
+      <h2>2. 本地通信说明 / Local Communication</h2>
+      <ul>
+        <li>扩展仅在用户主动安装并连接本机运行的「原产地证明 Agent 工作台」后，通过本地回环地址（<code>127.0.0.1</code> / <code>localhost</code>）与本机工作台进程进行 WebSocket 通信。</li>
+        <li>仅在用户主动授权并选定目标标签页后，读取当前业务表单结构并回填用户已核对确认的申报字段。</li>
+        <li class="en">The extension communicates exclusively with the user's local desktop workbench via loopback (<code>127.0.0.1</code> / <code>localhost</code>), and only accesses the user-selected tab after explicit user authorization.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 本地存储 / Local Storage</h2>
+      <p>扩展仅使用浏览器本地 <code>chrome.storage.local</code> 保存客户端随机标识（<code>clientId</code>）及用户自定义的浏览器备注名（<code>alias</code>），可随时通过卸载扩展清除。</p>
+    </section>
+
+    <section>
+      <h2>4. 联系方式 / Contact</h2>
+      <p>如有任何隐私相关问题，请联系开发者：<a href="mailto:dreamstar0227@gmail.com">dreamstar0227@gmail.com</a></p>
+    </section>
+
+    <footer>
+      &copy; 2026 SyrkosNexus. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
